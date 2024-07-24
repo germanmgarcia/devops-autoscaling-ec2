@@ -1,0 +1,11 @@
+{
+    "app": "python3 app.py",
+    "context": {
+      "@aws-cdk/core:bootstrapQualifier": "hnb659fds",
+      "@aws-cdk/core:newStyleStackSynthesis": true,
+      "@aws-cdk/aws-autoscaling:generateLaunchTemplate": true,
+      "account": "account",
+      "region": "us-east-1"
+    }
+  }
+  
