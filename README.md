@@ -8,6 +8,8 @@ This Terraform configuration deploys the following AWS infrastructure:
 - An Auto Scaling Group (ASG) with EC2 instances running an application.
 - An RDS instance for database storage, located in a private subnet.
 
+![Image01](images/autoscalingec2.png)
+
 ## AWS Well-Architected Framework Considerations
 ### Operational Excellence
 In this aspect, I have used Terraform as Infrastructure as Code (IaC), which allows me to have version control, deploy automatically, and repeat  the process. Additionally, I can ensure that the application can manage variable changes efficiently.
