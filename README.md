@@ -18,6 +18,9 @@ EC2 instances are created in a private subnet, which ensures they cannot be acce
 ### Reliability
 Using an auto-scaling group ensures high availability by automatically launching replacement instances if an EC2 fails. The ALB distributes traffic across the scaling group.
 
+### Performance Efficiency
+Auto-scaling automatically creates the number of EC2 instances depending on the application's load. This configuration is designed to balance the load and ensure efficient resource usage.
+
 ## Deployment Instructions
 1. **Configure AWS Credentials:**
    Ensure you have your AWS credentials configured either by using AWS CLI (`aws configure`) or by setting environment variables:
