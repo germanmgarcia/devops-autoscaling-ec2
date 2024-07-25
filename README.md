@@ -44,15 +44,15 @@ A CI/CD pipeline is a series of automated steps that take your application's cod
 
 ### Stages Involved
 - **Source**: Pull the latest code from GitHub.
-- Build: Compile the code, run tests, and package the application.
-- Test: Run integration tests to validate the application.
-- Deploy: Deploy the application to AWS using AWS GitHub Actions and Terraform.
-- Monitor: Monitor the application using AWS CloudWatch or other tool like DataDog.
+- **Build**: Compile the code, run tests, and package the application.
+- **Test**: Run integration tests to validate the application.
+- **Deploy**: Deploy the application to AWS using AWS GitHub Actions and Terraform.
+- **Monitor**: Monitor the application using AWS CloudWatch or other tool like DataDog.
  
 ### Integration Points with AWS Services
-- GitHub Actions: Source control for the application code.
-- GitHub Actions: Building and testing the application.
-- GitHub Actions: Deploying the application to EC2 instances.
-- Terraform or CDK: Managing infrastructure as code.
-- DataDog: Monitoring application performance and health.
+- **GitHub Actions**: Source control for the application code.
+- **GitHub Actions**: Building and testing the application.
+- **GitHub Actions**: Deploying the application to EC2 instances.
+- **Terraform or CDK**: Managing infrastructure as code.
+- **DataDog**: Monitoring application performance and health.
 
