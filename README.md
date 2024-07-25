@@ -59,3 +59,18 @@ A CI/CD pipeline is a series of automated steps that take your application's cod
 - **Terraform or CDK**: Managing infrastructure as code.
 - **DataDog**: Monitoring application performance and health.
 
+## Common Problems in CI/CD Pipeline
+### Continuous Integration (CI) Failures
+- Errors in code compilation due to missing dependencies, syntax errors, or incorrect configurations.
+- Solution: Check the build configuration file.
+
+### Deployment (CD) Problems
+- Errors during the application deployment due to incorrect configurations, lack of permissions, or connectivity issues.
+- Solution: Verify IAM permissions and deployment configurations.
+
+### Infrastructure Configuration Problems
+- Errors in configuring AWS resources such as VPC, subnets, security groups, etc., which can prevent the correct deployment of the application.
+
+### Security Issues
+- Lack of appropriate permissions in IAM policies, which prevents the pipeline from performing certain actions.
+- Solution: Review and adjust IAM policies to ensure the pipeline has the necessary permissions.
