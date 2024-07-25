@@ -12,6 +12,9 @@ This Terraform configuration deploys the following AWS infrastructure:
 ### Operational Excellence
 In this aspect, I have used Terraform as Infrastructure as Code (IaC), which allows me to have version control, deploy automatically, and repeat  the process. Additionally, I can ensure that the application can manage variable changes efficiently.
 
+### Security
+EC2 instances are created in a private subnet, which ensures they cannot be accessed directly from the internet.
+
 ## Deployment Instructions
 1. **Configure AWS Credentials:**
    Ensure you have your AWS credentials configured either by using AWS CLI (`aws configure`) or by setting environment variables:
