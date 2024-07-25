@@ -2,7 +2,7 @@
 
 ## Overview
 This Terraform configuration deploys the following AWS infrastructure:
-- A VPC with two public and two private subnet.
+- A VPC with a public and a private subnet in two availability zones.
 - An Internet Gateway attached to the VPC.
 - An Application Load Balancer (ALB) with a security group.
 - An Auto Scaling Group (ASG) with EC2 instances running an application.
