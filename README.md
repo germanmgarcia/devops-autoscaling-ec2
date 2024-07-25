@@ -50,7 +50,7 @@ A CI/CD pipeline is a series of automated steps that take your application's cod
 - **Security**: Run SonarQube for vulnerabilities in the application.
 - **Build**: Compile the code, create a tag, create the docker image, and save the docker image in a registry.
 - **Deploy**: Validate that the application is working with a smoke test, download the image docker from registry and deploy the application to AWS using AWS GitHub Actions.
-- **Monitor**: This is not part of a pipeline, but use a monitoring tool to validate that the application is working.
+- **Monitor**: This is not part of a pipeline, but use a monitoring tool to validate that the application is working like DataDog or New Relic.
  
 ### Integration Points with AWS Services
 - **GitHub Actions**: Source control for the application code.
