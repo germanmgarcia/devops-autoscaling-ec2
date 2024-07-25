@@ -21,6 +21,9 @@ Using an auto-scaling group ensures high availability by automatically launching
 ### Performance Efficiency
 Auto-scaling automatically creates the number of EC2 instances depending on the application's load. This configuration is designed to balance the load and ensure efficient resource usage.
 
+### Cost Optimization
+Resources are created on-demand and scale automatically, which means you only pay for what you use. Using Terraform helps create these resources efficiently and minimizes creating unnecessary resources.
+
 ## Deployment Instructions
 1. **Configure AWS Credentials:**
    Ensure you have your AWS credentials configured either by using AWS CLI (`aws configure`) or by setting environment variables:
