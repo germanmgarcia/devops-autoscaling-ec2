@@ -15,6 +15,9 @@ In this aspect, I have used Terraform as Infrastructure as Code (IaC), which all
 ### Security
 EC2 instances are created in a private subnet, which ensures they cannot be accessed directly from the internet. Only the ALB exposes port 80 to the internet, and the RDS instances can be accessed from within the VPC.
 
+### Reliability
+Using an auto-scaling group ensures high availability by automatically launching replacement instances if an EC2 fails. The ALB distributes traffic across the scaling group.
+
 ## Deployment Instructions
 1. **Configure AWS Credentials:**
    Ensure you have your AWS credentials configured either by using AWS CLI (`aws configure`) or by setting environment variables:
