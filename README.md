@@ -49,11 +49,11 @@ A CI/CD pipeline is a series of automated steps that take your application's cod
 - **Test**: Run integration tests to validate the application.
 - **Security**: Run SonarQube for vulnerabilities in the application.
 - **Build**: Compile the code, create a tag, create the docker image, and save the docker image in a registry.
-- **Deploy**: Validate that the application is working with a smoke test, download the image docker from registry and deploy the application to AWS using AWS GitHub Actions.
-- **Monitor**: This is not part of a pipeline, but use a monitoring tool to validate that the application is working like DataDog or New Relic.
+- **Deploy**: Validate that the application is working with a smoke test, download the image docker from registry and deploy the application to AWS.
+- **Monitor**: This is not part of a pipeline, but use a monitoring tool to validate that the application is working like DataDog or New Relic sending an alert to communication channel.
  
 ### Integration Points with AWS Services
-- **GitHub Actions**: Source control for the application code.
+- **GitHub**: Source control for the application code.
 - **GitHub Actions**: Building and testing the application.
 - **GitHub Actions**: Deploying the application to EC2 instances.
 - **Terraform or CDK**: Managing infrastructure as code.
@@ -66,7 +66,7 @@ A CI/CD pipeline is a series of automated steps that take your application's cod
 
 ### Deployment (CD) Problems
 - Errors during the application deployment due to incorrect configurations, lack of permissions, or connectivity issues.
-- Solution: Verify IAM permissions and deployment configurations.
+- Solution: Verify IAM permissions and credentials of deployment configurations.
 
 ### Infrastructure Configuration Problems
 - Errors in configuring AWS resources such as VPC, subnets, security groups, etc., which can prevent the correct deployment of the application.
